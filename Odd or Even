@@ -1,0 +1,13 @@
+Problem:
+
+Given an array of numbers, determine whether the sum of all of the numbers is odd or even.
+
+Give your answer in string format as 'odd' or 'even'.
+
+If the input array is empty consider it as: [0] (array with a zero).
+
+Solution:
+function odd_or_even(array $a): string {
+  $sum = array_sum($a);
+  return $sum%2 === 0 ? 'even' : 'odd';
+}
